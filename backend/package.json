@@ -2,13 +2,13 @@
   "name": "hffashion",
   "version": "1.0.0",
   "description": "ecommerce website",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js ",
-    "client": "cd frontend && npm start",
-    "dev": "concurrently \"nodemon backend/server.js\" \"npm run client\"",
+    "start": "node server.js",
+    "server": "nodemon server.js ",
+    "client": "cd .. && cd frontend && npm start",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
