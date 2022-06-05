@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "nodemon server.js ",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js ",
     "client": "cd .. && cd frontend && npm start",
     "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install && npm install --prefix frontend && npm run build --prefix frontend"

@@ -17,10 +17,10 @@ app.use("/api/v1", orderRouter);
 const paymentRouter = require("./routes/paymentRoutes");
 app.use("/api/v1", paymentRouter);
 
-app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./frontend/build/index.html"));
+  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
 });
 
 // app.get("/", (req, res) => {
