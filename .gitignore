@@ -8,11 +8,9 @@
 # testing
 /coverage
 
-# production
-/build
 
 # misc
-/config/config.env
+/backend/config/config.env
 .DS_Store
 .env.local
 .env.development.local
